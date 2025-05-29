@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+<body>
+    <script> 
+        let n3; // Creo una scatola vuota chiamata n3 per mettere il risultato
+
+        // Chiedo all'utente di scrivere il primo numero e lo metto nella scatola n1
+        let n1 = Number(prompt("Inserisci il primo numero:"));
+
+        // Chiedo all'utente di scrivere il secondo numero e lo metto nella scatola n2
+        let n2 = Number(prompt("Inserisci il secondo numero:"));
+
+        // Scrivo in console le scelte di operazioni che si possono fare
+        console.log("scegli quale operazione fare:\n1) +\n2) -\n3) *\n4) /\n");
+
+        // Chiedo all'utente di scegliere quale operazione vuole fare
+        let scelta = prompt("fai la tua scelta");
+
+        // Controllo cosa ha scelto l'utente
+        switch (scelta) {
+          case "1":  // Se ha scelto 1, faccio la somma
+            n3 = n1 + n2;
+            break;
+          case "2":  // Se ha scelto 2, faccio la sottrazione
+            n3 = n1 - n2;
+            break;
+          case "3":  // Se ha scelto 3, faccio la moltiplicazione
+            n3 = n1 * n2;
+            break;
+          case "4":  // Se ha scelto 4, faccio la divisione
+            n3 = n1 / n2;
+            break;
+        }
+
+        // Mostro il risultato in console
+        console.log("Il risultato è: " + n3);
+    </script>
+</body>
+</html>
