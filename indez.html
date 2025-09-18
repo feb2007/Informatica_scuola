@@ -1,0 +1,75 @@
+<!-- Autore: Fabio Gambirasio -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Profile</title>
+</head>
+<body>
+
+<h1>Edit Profile</h1>
+<hr>
+
+<form action="/action_page.php" method="post" enctype="multipart/form-data">
+  <!-- Profile Photo -->
+  <label for="photo">Your profile photo:</label>
+  <input type="file" id="photo" name="photo"><br><br>
+
+  <!-- First Name -->
+  <label for="fname">Your first name:</label><br>
+  <input type="text" id="fname" name="fname"><br><br>
+
+  <!-- Last Name -->
+  <label for="lname">Your last name:</label><br>
+  <input type="text" id="lname" name="lname"><br><br>
+
+  <!-- Gender -->
+  <label>Gender:</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">female</label>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">male</label><br><br>
+
+  <!-- Birth Date -->
+  <label for="birthdate">Birth date:</label><br>
+  <select name="month">
+    <option>Month</option>
+    <option>January</option>
+    <option>February</option>
+    <option>March</option>
+    <!-- ... altri mesi ... -->
+  </select>
+  <select name="day">
+    <option>Day</option>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <!-- ... altri giorni ... -->
+  </select>
+  <select name="year">
+    <option>Year</option>
+    <option>2000</option>
+    <option>1990</option>
+    <option>1980</option>
+    <!-- ... altri anni ... -->
+  </select>
+  <p>This is hidden by default from your profile.</p>
+
+  <!-- About You -->
+  <label for="about">About You:</label><br>
+  <textarea id="about" name="about" rows="5" cols="40"></textarea><br><br>
+
+  <!-- Website URL -->
+  <label for="website">Your web site url:</label><br>
+  <input type="url" id="website" name="website"><br><br>
+
+  <!-- Website Name -->
+  <label for="webname">Your web site name:</label><br>
+  <input type="text" id="webname" name="webname"><br><br>
+
+  <!-- Submit Button -->
+  <input type="submit" value="create profile >">
+</form>
+
+</body>
+</html>
